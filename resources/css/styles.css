@@ -1,0 +1,16 @@
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+#gnb ul {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=styles.css.map */
