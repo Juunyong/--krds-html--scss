@@ -1,10 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #wrap {
   width: 1200px;
   margin: 0 auto;
@@ -21,13 +15,16 @@ header h1 {
   color: maroon;
   background-color: bisque;
 }
+header h1 a {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: maroon;
+}
 header h1:hover::before {
   background-color: magenta;
 }
 header h1:hover a {
-  display: block;
-  width: 300px;
-  height: 300px;
   color: teal;
 }
 header h1::before {
