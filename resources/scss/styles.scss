@@ -1,17 +1,62 @@
+@import 'variables';
+@import 'reset';
+
+$lightgrey-300: #fdfdfd; // 변수는 앞으로도 계쏙 사용하니 잘 알아둘것
+$primary: #0000ff;
+
 #wrap {
     width: 1200px;
     margin: 0 auto;
-    background-color: aquamarine;
+    background: $primary;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     height: 100px;
+    h1 {
+        font-size: 24px;
+        color: maroon;
+        background-color: bisque;
+
+        &:hover {
+            &::before {
+                background-color: magenta;
+            }
+            a {
+                display: block;
+                width: 300px;
+                height: 300px;
+                color: teal;
+            }
+        }
+        &::before {
+            content: '앞';
+        }
+        &::after {
+            content: '뒤';
+        }
+    }
 }
+
 #gnb {
-    ul {
+    //자식만 선택하고 싶음
+    > ul {
         display: flex;
         gap: 20px;
+        > li {
+            > a {
+                padding: 20px;
+                background-color: azure;
+            }
+        }
+        //자손
+        ul {
+            display: flex;
+            gap: 20px;
+            a {
+                padding: 20px;
+            }
+        }
     }
 }
