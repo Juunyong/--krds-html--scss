@@ -1,6 +1,6 @@
 $lightgrey-300: #fdfdfd; // 변수는 앞으로도 계쏙 사용하니 잘 알아둘것
-$primary: #0000ff;
-
+$primary: #fff;
+@import './pattern/p_include';
 #wrap {
     width: 1200px;
     margin: 0 auto;

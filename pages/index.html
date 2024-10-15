@@ -1,35 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KRDS themplate</title>
+        <title>KRDS template</title>
+        <!--메타태그-->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="페이지 제목" />
+        <meta property="og:description" content="페이지 설명" />
+        <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+        <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="페이지 제목" />
+        <meta name="twitter:description" content="페이지 설명" />
+        <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:domain" content="사이트 명" />
+        <!--파비콘-->
+        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+
+        <!--swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--css file-->
         <link rel="stylesheet" href="../resources/css/styles.css" />
     </head>
     <body>
+        <div class="skip-nav">
+            <a href="#gnb">메뉴</a>
+            <a href="#container">본문 바로가기</a>
+        </div>
         <div id="wrap">
-            <header>
-                <h1>
-                    <a href="#">logo</a>
-                </h1>
-                <nav id="gnb">
-                    <ul>
-                        <li>
-                            <a href="#">menu1</a>
-                            <ul>
-                                <li><a href="#">menu1</a></li>
-                                <li><a href="#">menu2</a></li>
-                                <li><a href="#">menu3</a></li>
-                                <li><a href="#">menu4</a></li>
-                            </ul>
-                        </li>
+            <header id="header">header</header>
+            <div class="slide">
+                <!-- Slider main container -->
+                <div class="swiper slide_intro">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img
+                                    src="https://www.meconomynews.com/news/photo/202404/91635_111306_3112.jpg"
+                                    alt="hera"
+                                />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://i.ytimg.com/vi/RRQLQm0AXdU/maxresdefault.jpg" alt="hera" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://i.ytimg.com/vi/MZdGr8RPcT0/maxresdefault.jpg" alt="hera" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                        <li><a href="#">menu2</a></li>
-                        <li><a href="#">menu3</a></li>
-                        <li><a href="#">menu4</a></li>
-                    </ul>
-                </nav>
-            </header>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <main id="container">container</main>
+            <footer id="footer">footer</footer>
         </div>
     </body>
+    <script>
+        var swiper = new Swiper('.slide_intro', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+    <style>
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </html>
