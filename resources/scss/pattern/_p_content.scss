@@ -15,7 +15,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,9 +67,10 @@
       // .text-area__tit
       &__tit {
         font-size: 3rem;
+        color: $gray-90;
       }
       &__cont {
-        color: #999;
+        color: $gray-70;
       }
       &__goto {
         display: inline-block;
@@ -102,12 +103,8 @@
   }
   .slide-intro .swiper-slide .text-area {
     width: 100%;
-    max-width: 1340px;
-    padding: 0 30px;
+    max-width: none;
     text-align: left;
-  }
-  .slide-intro .swiper-slide .text-area__goto {
-    font-size: 2rem;
   }
   .slide-intro .swiper-slide .text-area__tit {
     font-size: 6rem;
@@ -115,11 +112,29 @@
   .slide-intro .swiper-slide .text-area__cont {
     font-size: 2rem;
   }
+  .slide-intro .swiper-slide .text-area__goto {
+    margin-top: 30px;
+  }
   .slide-intro .swiper-pagination {
     display: block;
   }
   .slide-intro .swiper-button-next,
   .slide-intro .swiper-button-prev {
     display: none;
+  }
+}
+
+.slide-studio {
+  overflow: visible;
+  width: 80%;
+  margin-left: 0;
+  @include mobileMore {
+    width: 90%;
+  }
+  @include tabletMore {
+    width: 100%;
+  }
+  .swiper-pagination {
+    bottom: -50px;
   }
 }

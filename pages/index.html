@@ -71,7 +71,97 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <main id="container">content</main>
+      <main id="container">
+        <!-- 스튜디오 섹션 -->
+        <section class="sec-g sec-studio">
+          <div class="inner">
+            <h2 class="sec-g__tit">섹션 타이틀</h2>
+            <div class="sec-g__cont">
+              <div class="swiper slide-studio">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+
+        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <section class="sec-g sec-news bg-gray">
+          <div class="inner">
+            <h2 class="sec-g__tit">섹션 타이틀</h2>
+            <div class="sec-g__cont">컨텐츠</div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+
+        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <section class="sec-g sec-news">
+          <div class="inner">
+            <h2 class="sec-g__tit">섹션 타이틀</h2>
+            <div class="sec-g__cont">컨텐츠</div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+
+        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <section class="sec-g sec-news bg-gray">
+          <div class="inner">
+            <h2 class="sec-g__tit">섹션 타이틀</h2>
+            <div class="sec-g__cont">컨텐츠</div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+      </main>
       <footer id="footer">footer</footer>
     </div>
 
@@ -99,6 +189,29 @@
         //     spaceBetween: 50,
         //   },
         // },
+      });
+
+      var swiper = new Swiper(".slide-studio", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1920: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
       });
     </script>
   </body>

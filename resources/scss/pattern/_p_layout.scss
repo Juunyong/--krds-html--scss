@@ -1,11 +1,46 @@
 // 사이트 레이아웃 관련 요소
-// wrap
-// header
-// footer
-// aside
+.bg-gray {
+  background-color: $gray-5;
+}
 
+#container {
+  min-height: 100vh;
+}
+// grid layout
 .inner {
+  position: relative;
   width: 100%;
   max-width: 1340px;
+  margin: 0 auto;
   padding: 0 30px;
+}
+
+// section layout
+.sec-g {
+  padding: 10vw 0;
+  &__tit {
+    padding-bottom: 2.34375vw;
+    font-size: 4.8rem;
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    font-size: 2rem;
+    &::after {
+      content: "\f061";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: $gray-20;
+      border-radius: 50%;
+    }
+  }
 }
