@@ -25,10 +25,9 @@
     <body>
         <div id="wrap">
             <!-- 본문 바로가기 영역  -->
-            <div id="skip-nav">
+            <div id="skip-nav" class="type1">
                 <a href="#container">본문 바로가기</a>
             </div>
-
             <!-- //본문 바로가기 영역  -->
 
             <!-- 상단 배너영역  -->
@@ -151,30 +150,31 @@
                                 <h1 class="logo">
                                     <a href="worksheet.html">
                                         <img
-                                            src="../../resources/img/pattern/layout/head_logo.svg"
+                                            src="../resources/img/pattern/layout/head_logo.svg"
                                             class="logo-im"
                                             alt="대한민국정부"
                                         />
                                         <img
-                                            src="../../resources/img/pattern/layout/head_logo_slogan.svg"
+                                            src="../resources/img/pattern/layout/head_logo_slogan.svg"
                                             class="logo-slogan"
                                             alt="다시 대한민국! 새로운 국민의 나라"
                                         />
                                     </a>
                                 </h1>
+
                                 <div class="right">
                                     <button
                                         type="button"
-                                        class="btn-navi sch"
+                                        class="btn-navi navi-row sch"
                                         title="통합검색 레이어"
                                         onclick="common.popupEvent('#popTotalSch');"
                                     >
                                         통합검색
                                     </button>
-                                    <button type="button" class="btn-navi login">로그인</button>
-                                    <button type="button" class="btn-navi join">회원가입</button>
+                                    <button type="button" class="btn-navi navi-row login">로그인</button>
+                                    <button type="button" class="btn-navi navi-row join">회원가입</button>
                                     <div class="krds-drop-wrap my-drop">
-                                        <button type="button" class="btn-navi my drop-btn">나의 GOV</button>
+                                        <button type="button" class="btn-navi navi-row my drop-btn">나의 GOV</button>
                                         <div class="drop-menu">
                                             <div class="drop-in">
                                                 <div class="drop-top-info">
@@ -203,7 +203,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn-navi all" id="m-gnb-open">전체메뉴</button>
+                                    <button type="button" class="btn-navi navi-row all" id="m-gnb-open">
+                                        전체메뉴
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +248,7 @@
                                                             >
                                                         </li>
                                                         <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm1-5">
+                                                            <button type="button" class="sm" data-id="w-gnb-sm1-4">
                                                                 2depth5
                                                             </button>
                                                         </li>
@@ -343,7 +345,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="submenu-in" id="w-gnb-sm1-5">
+                                                    <div class="submenu-in" id="w-gnb-sm1-4">
                                                         <div class="sub-in">
                                                             <h3 class="sub-tit">
                                                                 <a href="#" class="btn btn-txt ico-arr lg"
@@ -409,7 +411,7 @@
                                                             >
                                                         </li>
                                                         <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm2-5">
+                                                            <button type="button" class="sm" data-id="w-gnb-sm2-4">
                                                                 2depth5
                                                             </button>
                                                         </li>
@@ -418,24 +420,43 @@
                                                 <div class="submenu-wrap">
                                                     <div class="submenu-in" id="w-gnb-sm2-1">
                                                         <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth1-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
+                                                            <h3 class="sub-tit">2depth1-title</h3>
+                                                            <ul class="sub-ul type1">
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                         <div class="sub-ban">
@@ -446,26 +467,45 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="submenu-in" id="w-gnb-sm2-2">
+                                                    <div class="submenu-in between" id="w-gnb-sm2-2">
                                                         <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth2-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
+                                                            <h3 class="sub-tit">2depth2-title</h3>
+                                                            <ul class="sub-ul type1">
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                         <div class="sub-ban">
@@ -506,11 +546,11 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="submenu-in" id="w-gnb-sm2-5">
+                                                    <div class="submenu-in" id="w-gnb-sm2-4">
                                                         <div class="sub-in">
                                                             <h3 class="sub-tit">
                                                                 <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth5-title</a
+                                                                    >2depth4-title</a
                                                                 >
                                                             </h3>
                                                             <ul class="sub-ul">
@@ -545,135 +585,12 @@
                                     <div class="w-gnb-wrap">
                                         <div class="inner">
                                             <div class="w-gnb-menu">
-                                                <div class="menu-wrap">
-                                                    <ul class="ul">
-                                                        <li>
-                                                            <button
-                                                                type="button"
-                                                                class="sm active"
-                                                                data-id="w-gnb-sm3-1"
-                                                            >
-                                                                2depth1
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm3-2">
-                                                                2depth2
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm3-3">
-                                                                2depth3
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="sm ico-go" target="_blank"
-                                                                >2depth4_외부사이트</a
-                                                            >
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm3-5">
-                                                                2depth5
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="submenu-wrap">
-                                                    <div class="submenu-in" id="w-gnb-sm3-1">
+                                                <div class="submenu-wrap type1 between">
+                                                    <div class="submenu-in">
                                                         <div class="sub-in">
                                                             <h3 class="sub-tit">
                                                                 <a href="#" class="btn btn-txt ico-arr lg"
                                                                     >2depth1-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sub-ban">
-                                                            <span class="krds-badge bg1">신규 서비스</span>
-                                                            <a href="#" class="btn btn-txt ico-arr sm"
-                                                                >행정서식 간편이름</a
-                                                            >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="submenu-in" id="w-gnb-sm3-2">
-                                                        <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth2-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sub-ban">
-                                                            <span class="krds-badge bg1">신규 서비스</span>
-                                                            <a href="#" class="btn btn-txt ico-arr sm"
-                                                                >행정서식 간편이름</a
-                                                            >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="submenu-in" id="w-gnb-sm3-3">
-                                                        <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth3-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sub-ban">
-                                                            <span class="krds-badge bg1">신규 서비스</span>
-                                                            <a href="#" class="btn btn-txt ico-arr sm"
-                                                                >행정서식 간편이름</a
-                                                            >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="submenu-in" id="w-gnb-sm3-5">
-                                                        <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth5-title</a
                                                                 >
                                                             </h3>
                                                             <ul class="sub-ul">
@@ -734,12 +651,15 @@
                                                                 >2depth4_외부사이트</a
                                                             >
                                                         </li>
-                                                        <li>
-                                                            <button type="button" class="sm" data-id="w-gnb-sm4-5">
-                                                                2depth5
-                                                            </button>
-                                                        </li>
                                                     </ul>
+                                                    <div class="sub-ban">
+                                                        <div class="ban-in">
+                                                            <span class="krds-badge bg1">신규 서비스</span>
+                                                            <a href="#" class="btn btn-txt ico-arr sm"
+                                                                >행정서식 간편이름</a
+                                                            >
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="submenu-wrap">
                                                     <div class="submenu-in" id="w-gnb-sm4-1">
@@ -749,26 +669,43 @@
                                                                     >2depth1-title</a
                                                                 >
                                                             </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
+                                                            <ul class="sub-ul type1">
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <h4 class="tit"><a href="#">3depth-title</a></h4>
+                                                                    <p class="txt">
+                                                                        메뉴명과 메뉴에 관한 간략한 설명이 표시되는
+                                                                        스타일입니다.
+                                                                    </p>
+                                                                </li>
                                                             </ul>
-                                                        </div>
-                                                        <div class="sub-ban">
-                                                            <span class="krds-badge bg1">신규 서비스</span>
-                                                            <a href="#" class="btn btn-txt ico-arr sm"
-                                                                >행정서식 간편이름</a
-                                                            >
                                                         </div>
                                                     </div>
 
@@ -807,36 +744,6 @@
                                                             <h3 class="sub-tit">
                                                                 <a href="#" class="btn btn-txt ico-arr lg"
                                                                     >2depth3-title</a
-                                                                >
-                                                            </h3>
-                                                            <ul class="sub-ul">
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title111</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                                <li><a href="#">3depth-title</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sub-ban">
-                                                            <span class="krds-badge bg1">신규 서비스</span>
-                                                            <a href="#" class="btn btn-txt ico-arr sm"
-                                                                >행정서식 간편이름</a
-                                                            >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="submenu-in" id="w-gnb-sm4-5">
-                                                        <div class="sub-in">
-                                                            <h3 class="sub-tit">
-                                                                <a href="#" class="btn btn-txt ico-arr lg"
-                                                                    >2depth5-title</a
                                                                 >
                                                             </h3>
                                                             <ul class="sub-ul">
@@ -1192,6 +1099,9 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li class="li">
+                                    <a href="#" class="mn">단순링크</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -1201,7 +1111,7 @@
 
                 <!-- 모바일 : 전체메뉴 -->
                 <div id="m-gnb" class="m-gnb-wrap">
-                    <div class="m-gnb-in">
+                    <div class="m-gnb-in type1">
                         <div class="m-gnb-head">
                             <div class="m-gnb-top-etc">
                                 <ul class="etc-ul">
@@ -1213,15 +1123,10 @@
                                 </button>
                             </div>
                             <div class="m-gnb-login">
-                                <a href="#" class="btn-navi navi-row login">로그인을 해주세요.</a>
+                                <span class="name">홍길동님</span>
+                                <button type="button" class="btn btn-txt ico-logout ico-before xsm">로그아웃</button>
                             </div>
-                            <div class="etc-menu">
-                                <a href="#" class="link">메뉴명</a>
-                                <a href="#" class="link">메뉴명</a>
-                                <a href="#" class="link">메뉴명</a>
-                                <a href="#" class="link">메뉴명</a>
-                            </div>
-                            <div class="etc-sch">
+                            <div class="m-gnb-top-scroll">
                                 <div class="sch-input">
                                     <input
                                         type="text"
@@ -1232,20 +1137,21 @@
                                         <span class="sr-only">검색</span>
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="m-gnb-body">
-                            <div class="m-gnb-menu">
-                                <div class="menu-wrap">
+                                <div class="menu-wrap menu-hori">
                                     <ul class="ul">
                                         <li><a href="#mGnb-anchor1" class="mn">MyGOV</a></li>
                                         <li><a href="#mGnb-anchor2" class="mn">민원서비스</a></li>
                                         <li><a href="#mGnb-anchor3" class="mn">보조금24</a></li>
                                         <li><a href="#mGnb-anchor4" class="mn">정책정보</a></li>
                                         <li><a href="#mGnb-anchor5" class="mn">고객센터</a></li>
+                                        <li><a href="#" class="mn">단순링크</a></li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="m-gnb-body type1">
+                            <div class="m-gnb-menu type1">
                                 <div class="submenu-wrap">
                                     <div class="dl" id="mGnb-anchor1">
                                         <dl>
@@ -1266,6 +1172,12 @@
                                             <dd class="dd"><a href="#" class="sm">기업/단체 서비스</a></dd>
                                             <dd class="dd"><a href="#" class="sm">돌봄시설 등 위치 찾기</a></dd>
                                         </dl>
+                                        <div class="sub-ban">
+                                            <div class="ban-in">
+                                                <span class="krds-badge bg1">신규 서비스</span>
+                                                <a href="#" class="btn btn-txt ico-arr sm">행정서식 간편이름</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="dl" id="mGnb-anchor3">
                                         <dl>
@@ -1278,7 +1190,7 @@
                                                 <a href="#" class="sm">보조금24란</a>
                                                 <ul class="sub-ul">
                                                     <li>
-                                                        <a href="#" class="subm is-depth4">소개(4depth)</a>
+                                                        <a href="#" class="subm is-depth4">소개(4depth있음)</a>
                                                         <div class="depth4-wrap">
                                                             <div class="depth4-head">
                                                                 <button type="button" class="btn btn-ico ico-prev">
@@ -1367,7 +1279,8 @@
                                                     type="text"
                                                     class="form-control xlg"
                                                     id="search-total-input-id"
-                                                    placeholder=""
+                                                    placeholder="검색어 입력"
+                                                    value="퇴직"
                                                 />
                                                 <button type="button" class="btn btn-ico ico-sch">
                                                     <span class="sr-only">검색</span>
@@ -1383,101 +1296,51 @@
 
                                     <!-- 검색어 리스트 -->
                                     <div class="search-text">
-                                        <!-- 검색어 입력 전 -->
-                                        <ul class="sch-info-list">
-                                            <li class="li li1">
-                                                <h3 class="tit">인기검색어</h3>
-                                                <ol class="list">
-                                                    <li>
-                                                        <span class="ranking-txt">안전보건교육</span
-                                                        ><span class="ranking-state up"
-                                                            ><em class="sr-only">상승</em>1</span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">산업재해조사표</span
-                                                        ><span class="ranking-state same"
-                                                            ><em class="sr-only">동일</em></span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">퇴직금계산기</span
-                                                        ><span class="ranking-state up"
-                                                            ><em class="sr-only">상승</em>3</span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">육아휴직급여</span
-                                                        ><span class="ranking-state same"
-                                                            ><em class="sr-only">동일</em></span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">실업인정신청</span
-                                                        ><span class="ranking-state same"
-                                                            ><em class="sr-only">동일</em></span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">국민내일배움</span
-                                                        ><span class="ranking-state down"
-                                                            ><em class="sr-only">하락</em>1</span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">노사협의회</span
-                                                        ><span class="ranking-state down"
-                                                            ><em class="sr-only">하락</em>1</span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">산업안전보건</span
-                                                        ><span class="ranking-state same"
-                                                            ><em class="sr-only">동일</em></span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">국민내일배움카드신청</span
-                                                        ><span class="ranking-state up"
-                                                            ><em class="sr-only">상승</em>11</span
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <span class="ranking-txt">안전보건교육</span
-                                                        ><span class="ranking-state same"
-                                                            ><em class="sr-only">동일</em></span
-                                                        >
-                                                    </li>
-                                                </ol>
+                                        <!-- 검색어 입력 후 -->
+                                        <ul class="sch-keyword-list">
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt">
+                                                        <span class="text-bold">나의 퇴직</span>금 계산해 보기
+                                                    </p>
+                                                    <p class="url">https://labor.moel.go.kr/cmmt/calRtrmnt.do</p>
+                                                </div>
+                                                <a href="#" class="btn btn-txt ico-go sm" target="_blank"
+                                                    ><span>바로가기</span></a
+                                                >
                                             </li>
-                                            <li class="li li2">
-                                                <h3 class="tit">최근검색어</h3>
-                                                <ul class="list">
-                                                    <li>
-                                                        <span class="word-txt">안전보건교육</span>
-                                                        <button class="btn btn-ico ico-del sm">
-                                                            <span class="sr-only">삭제</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <span class="word-txt">안전보건교육</span>
-                                                        <button class="btn btn-ico ico-del sm">
-                                                            <span class="sr-only">삭제</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <span class="word-txt">안전보건교육</span>
-                                                        <button class="btn btn-ico ico-del sm">
-                                                            <span class="sr-only">삭제</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="btn btn-txt ico-del sm">
-                                                    최근검색어 전체 삭제
-                                                </button>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt"><span class="text-bold">퇴직</span>금 계산기</p>
+                                                </div>
+                                            </li>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt"><span class="text-bold">퇴직</span>금 중간정산</p>
+                                                </div>
+                                            </li>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt"><span class="text-bold">퇴직</span>금 미지급</p>
+                                                </div>
+                                            </li>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt">일용직<span class="text-bold">퇴직</span>금</p>
+                                                </div>
+                                            </li>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt">육아휴직<span class="text-bold">퇴직</span>금</p>
+                                                </div>
+                                            </li>
+                                            <li class="li">
+                                                <div class="text">
+                                                    <p class="txt">연차수당<span class="text-bold">퇴직</span>금</p>
+                                                </div>
                                             </li>
                                         </ul>
-                                        <!-- //검색어 입력 전 -->
+                                        <!-- //검색어 입력 후 -->
                                     </div>
                                     <!-- //검색어 리스트 -->
                                 </div>
@@ -1564,7 +1427,131 @@
             <!-- 컨테이너 영역 -->
             <div id="container">
                 <!-- 컨텐츠 영역 -->
-                <div class="inner">컨텐츠 영역</div>
+                <div class="inner in-between">
+                    <div class="left-menu">
+                        <div class="left-in">
+                            <h2 class="lnb-tit">1depth title</h2>
+                            <ul class="acco-list lnb-list" data-action="accordion">
+                                <li class="li">
+                                    <div class="acco-head">
+                                        <h3 class="tit">2depth-title</h3>
+                                        <button type="button" class="btn btn-ico acco-btn">
+                                            <span class="sr-only">접기</span>
+                                        </button>
+                                    </div>
+                                    <div class="acco-body">
+                                        <div class="acco-in">
+                                            <ul class="sub-ul">
+                                                <li>
+                                                    <button type="button" class="subm is-depth4">
+                                                        3depth title<span class="sr-only">열기</span>
+                                                    </button>
+                                                    <div class="depth4-wrap">
+                                                        <button type="button" class="depth4-tit">
+                                                            3depth-title
+                                                            <span class="sr-only">닫기</span>
+                                                        </button>
+                                                        <ul class="depth4-ul">
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li">
+                                    <div class="acco-head">
+                                        <h3 class="tit">2depth-title</h3>
+                                        <button type="button" class="btn btn-ico acco-btn">
+                                            <span class="sr-only">접기</span>
+                                        </button>
+                                    </div>
+                                    <div class="acco-body">
+                                        <div class="acco-in">
+                                            <ul class="sub-ul">
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li>
+                                                    <button type="button" class="subm is-depth4">
+                                                        3depth title<span class="sr-only">열기</span>
+                                                    </button>
+                                                    <div class="depth4-wrap">
+                                                        <button type="button" class="depth4-tit">
+                                                            3depth title<span class="sr-only">닫기</span>
+                                                        </button>
+                                                        <ul class="depth4-ul">
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                            <li><a href="#">depth title</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li">
+                                    <div class="acco-head">
+                                        <h3 class="tit">2depth-title</h3>
+                                        <button type="button" class="btn btn-ico acco-btn">
+                                            <span class="sr-only">접기</span>
+                                        </button>
+                                    </div>
+                                    <div class="acco-body">
+                                        <div class="acco-in">
+                                            <ul class="sub-ul">
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                                <li><a href="#" class="subm">3depth title</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="contents">
+                        <!-- breadcrumb -->
+                        <div class="breadcrumb-wrap">
+                            <ol class="breadcrumb">
+                                <li class="home"><a href="#" class="txt">홈</a></li>
+                                <li><span class="txt">Depth</span></li>
+                                <li><span class="txt">Depth</span></li>
+                                <li><span class="txt">Depth Last</span></li>
+                            </ol>
+                        </div>
+                        <!-- breadcrumb -->
+                        <!-- 페이지 타이틀 영역 -->
+                        <div class="page-title-wrap" data-type="responsive">
+                            <h2 class="h-tit">page title</h2>
+                            <div class="krds-drop-wrap h-tit-drop">
+                                <button type="button" class="h-tit drop-btn">서비스 소개</button>
+                                <div class="drop-menu">
+                                    <div class="drop-in">
+                                        <ul class="drop-list">
+                                            <li><a href="#" class="item-link">서비스 소개</a></li>
+                                            <li><a href="#" class="item-link">국내에서 외국발간자료 신청</a></li>
+                                            <li><a href="#" class="item-link">해외에서 국내발간자료 신청</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 영역 -->
+                        컨텐츠 영역
+                    </div>
+                </div>
                 <!-- //컨텐츠 영역 -->
             </div>
             <!-- //컨테이너 영역 -->
@@ -1599,16 +1586,26 @@
                     <div class="f-cnt">
                         <div class="f-info">
                             <p class="info-addr">(26464) 강원특별자치도 원주시 건강로 32(반곡동) 국민건강보험공단</p>
-                            <ul class="info-cs">
-                                <li>
-                                    <strong class="strong">대표전화 1577-1000</strong
-                                    ><span class="span">(유료, 평일 09시~18시)</span>
-                                </li>
-                                <li>
-                                    <strong class="strong">해외이용 82-33-811-2001</strong
-                                    ><span class="span">(유료, 평일 09시~18시)</span>
-                                </li>
-                            </ul>
+                        </div>
+
+                        <div class="f-cs">
+                            <dl class="dl">
+                                <dt>전화번호</dt>
+                                <dd>
+                                    <strong class="key">정부민원안내 전화 상담실</strong
+                                    ><span class="value">국번없이 110</span>
+                                </dd>
+                                <dd>
+                                    <strong class="key">교육부 민원 전화 상담실</strong
+                                    ><span class="value">02-6222-6060</span>
+                                </dd>
+                                <dd><strong class="key">당직실</strong><span class="value">044-203-6118</span></dd>
+                            </dl>
+                            <dl class="dl">
+                                <dt>팩스번호</dt>
+                                <dd><strong class="key">민원</strong><span class="value">110044-203-6093</span></dd>
+                                <dd><strong class="key">문서접수</strong><span class="value">044-203-6133</span></dd>
+                            </dl>
                         </div>
 
                         <div class="f-link">
