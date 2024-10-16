@@ -3485,6 +3485,12 @@ input[type=checkbox] {
   border-width: 2px;
 }
 
+.inner {
+  width: 100%;
+  max-width: 1340px;
+  padding: 0 30px;
+}
+
 #skip-nav,
 #header {
   display: none;
@@ -3582,7 +3588,19 @@ input[type=checkbox] {
     height: 90vh;
   }
   .slide-intro .swiper-slide .text-area {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 30px;
     text-align: left;
+  }
+  .slide-intro .swiper-slide .text-area__goto {
+    font-size: 2rem;
+  }
+  .slide-intro .swiper-slide .text-area__tit {
+    font-size: 6rem;
+  }
+  .slide-intro .swiper-slide .text-area__cont {
+    font-size: 2rem;
   }
   .slide-intro .swiper-pagination {
     display: block;
