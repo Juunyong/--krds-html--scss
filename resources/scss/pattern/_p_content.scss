@@ -98,29 +98,33 @@
 
 // desktop
 @media screen and (min-width: 1024px) {
-  .slide-intro .swiper-slide img {
-    height: 90vh;
-  }
-  .slide-intro .swiper-slide .text-area {
-    width: 100%;
-    max-width: none;
-    text-align: left;
-  }
-  .slide-intro .swiper-slide .text-area__tit {
-    font-size: 6rem;
-  }
-  .slide-intro .swiper-slide .text-area__cont {
-    font-size: 2rem;
-  }
-  .slide-intro .swiper-slide .text-area__goto {
-    margin-top: 30px;
-  }
-  .slide-intro .swiper-pagination {
-    display: block;
-  }
-  .slide-intro .swiper-button-next,
-  .slide-intro .swiper-button-prev {
-    display: none;
+  .slide-intro {
+    .swiper-slide {
+      img {
+        height: 90vh;
+      }
+      .text-area {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+      }
+      .text-area__tit {
+        font-size: 6rem;
+      }
+      .text-area__cont {
+        font-size: 2rem;
+      }
+      .text-area__goto {
+        margin-top: 30px;
+      }
+    }
+    .swiper-pagination {
+      display: block;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
   }
 }
 
@@ -133,6 +137,7 @@
   }
   @include tabletMore {
     width: 100%;
+    margin-left: auto;
   }
   .swiper-pagination {
     bottom: -50px;

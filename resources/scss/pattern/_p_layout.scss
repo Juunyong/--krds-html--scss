@@ -3,16 +3,16 @@
   background-color: $gray-5;
 }
 
-#container {
-  min-height: 100vh;
-}
 // grid layout
 .inner {
   position: relative;
   width: 100%;
-  max-width: 1340px;
+  max-width: $grid;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 $p-mobile;
+  @include tablet {
+    padding: 0 $p-tablet;
+  }
 }
 
 // section layout
