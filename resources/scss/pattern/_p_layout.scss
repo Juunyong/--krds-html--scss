@@ -83,7 +83,16 @@
 #header {
   position: relative;
   z-index: 1000;
+  &.active {
+    &::before {
+      display: block;
+    }
+    .gnb_depth2 {
+      display: block;
+    }
+  }
   &::before {
+    display: none;
     content: "";
     position: absolute;
     background-color: $gray-30;
@@ -101,9 +110,10 @@
   .logo {
     a {
       display: block;
-      width: 306px;
-      height: 54px;
+      width: 252px;
+      height: 45px;
       background: url(../../../resources/images/pattern/common/head_logo.png) no-repeat 0 0;
+      background-size: contain;
     }
     span {
       @include sr-only;
@@ -116,12 +126,27 @@
   &_depth1 {
     display: flex;
     > li {
+      position: relative;
       &:hover {
-        > a > span::after {
-          width: 100%;
+        > a > span {
+          &::after {
+            width: 100%;
+          }
         }
       }
-      position: relative;
+      &:first-child {
+        .gnb_depth2 {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: $gray-20;
+          }
+        }
+      }
       > a {
         display: flex;
         justify-content: center;
@@ -130,8 +155,9 @@
         padding: 0 50px;
         font-size: 2rem;
         font-weight: bold;
-        background: aquamarine;
+        background: #fff;
         > span {
+          position: relative;
           display: flex;
           align-items: center;
           height: 100%;
@@ -139,9 +165,10 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
             width: 0;
             height: 5px;
+            transform: translateX(-50%);
             background-color: rebeccapurple;
             transition: all 0.3s;
           }
@@ -151,19 +178,72 @@
   }
 
   &_depth2 {
+    display: none;
     position: absolute;
     top: 102px;
     left: 0;
     right: 0;
     padding: 20px 0;
     background-color: $gray-30;
-    // display: none;
     //나는 라인 안그릴거야
     a {
       display: block;
       padding: 7px 0;
       text-align: center;
       color: $gray-70;
+      &:hover {
+        font-weight: $font-weight-bold;
+        color: $gray-90;
+      }
     }
+  }
+}
+
+.util {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  width: 25px;
+  height: 25px;
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../../../resources/images/component/common/ico_search.svg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.sitemap {
+  width: 25px;
+  height: 25px;
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../../../resources/images/component/common/ico_sitemap.svg) no-repeat;
+    background-size: contain;
+  }
+}
+.language {
+  .language_button {
+    display: flex;
+    align-items: center;
+    &::after {
+      display: block;
+      width: 25px;
+      height: 12px;
+      content: "";
+      background: url(../../../resources/images/component/common/ico_downarrow.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  .language_list {
+    display: none;
   }
 }

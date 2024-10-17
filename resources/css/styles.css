@@ -3581,7 +3581,14 @@ input[type=checkbox] {
   position: relative;
   z-index: 1000;
 }
+#header.active::before {
+  display: block;
+}
+#header.active .gnb_depth2 {
+  display: block;
+}
 #header::before {
+  display: none;
   content: "";
   position: absolute;
   background-color: #d8d8d8;
@@ -3598,9 +3605,10 @@ input[type=checkbox] {
 }
 #header .logo a {
   display: block;
-  width: 306px;
-  height: 54px;
+  width: 252px;
+  height: 45px;
   background: url(../../../resources/images/pattern/common/head_logo.png) no-repeat 0 0;
+  background-size: contain;
 }
 #header .logo span {
   position: absolute !important;
@@ -3626,6 +3634,15 @@ input[type=checkbox] {
 .gnb_depth1 > li:hover > a > span::after {
   width: 100%;
 }
+.gnb_depth1 > li:first-child .gnb_depth2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #e4e4e4;
+}
 .gnb_depth1 > li > a {
   display: flex;
   justify-content: center;
@@ -3634,9 +3651,10 @@ input[type=checkbox] {
   padding: 0 50px;
   font-size: 2rem;
   font-weight: bold;
-  background: aquamarine;
+  background: #fff;
 }
 .gnb_depth1 > li > a > span {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -3645,13 +3663,15 @@ input[type=checkbox] {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 5px;
+  transform: translateX(-50%);
   background-color: rebeccapurple;
   transition: all 0.3s;
 }
 .gnb_depth2 {
+  display: none;
   position: absolute;
   top: 102px;
   left: 0;
@@ -3664,6 +3684,58 @@ input[type=checkbox] {
   padding: 7px 0;
   text-align: center;
   color: #555555;
+}
+.gnb_depth2 a:hover {
+  font-weight: 700;
+  color: #1d1d1d;
+}
+
+.util {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  width: 25px;
+  height: 25px;
+}
+.search::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url(../../../resources/images/component/common/ico_search.svg) no-repeat;
+  background-size: contain;
+}
+
+.sitemap {
+  width: 25px;
+  height: 25px;
+}
+.sitemap::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url(../../../resources/images/component/common/ico_sitemap.svg) no-repeat;
+  background-size: contain;
+}
+
+.language .language_button {
+  display: flex;
+  align-items: center;
+}
+.language .language_button::after {
+  display: block;
+  width: 25px;
+  height: 12px;
+  content: "";
+  background: url(../../../resources/images/component/common/ico_downarrow.png) no-repeat;
+  background-size: contain;
+}
+.language .language_list {
+  display: none;
 }
 
 .gnb_depth2 {
