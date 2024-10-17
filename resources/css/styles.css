@@ -3602,6 +3602,16 @@ input[type=checkbox] {
   justify-content: space-between;
   align-items: center;
   max-width: none;
+  height: 73px;
+}
+#header .logo {
+  transform: scale(0.8);
+  transform-origin: 0 50%;
+}
+@media (min-width: 1024px) {
+  #header .logo {
+    transform: none;
+  }
 }
 #header .logo a {
   display: block;
@@ -3625,16 +3635,16 @@ input[type=checkbox] {
 .gnb {
   position: relative;
 }
-.gnb_depth1 {
+.gnb .gnb_depth1 {
   display: flex;
 }
-.gnb_depth1 > li {
+.gnb .gnb_depth1 > li {
   position: relative;
 }
-.gnb_depth1 > li:hover > a > span::after {
+.gnb .gnb_depth1 > li:hover > a > span::after {
   width: 100%;
 }
-.gnb_depth1 > li:first-child .gnb_depth2::before {
+.gnb .gnb_depth1 > li:first-child .gnb_depth2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3643,23 +3653,23 @@ input[type=checkbox] {
   height: 100%;
   background: #e4e4e4;
 }
-.gnb_depth1 > li > a {
+.gnb .gnb_depth1 > li > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 102px;
+  height: 73px;
   padding: 0 50px;
   font-size: 2rem;
   font-weight: bold;
   background: #fff;
 }
-.gnb_depth1 > li > a > span {
+.gnb .gnb_depth1 > li > a > span {
   position: relative;
   display: flex;
   align-items: center;
   height: 100%;
 }
-.gnb_depth1 > li > a > span::after {
+.gnb .gnb_depth1 > li > a > span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -3670,7 +3680,7 @@ input[type=checkbox] {
   background-color: rebeccapurple;
   transition: all 0.3s;
 }
-.gnb_depth2 {
+.gnb .gnb_depth2 {
   display: none;
   position: absolute;
   top: 102px;
@@ -3679,13 +3689,13 @@ input[type=checkbox] {
   padding: 20px 0;
   background-color: #d8d8d8;
 }
-.gnb_depth2 a {
+.gnb .gnb_depth2 a {
   display: block;
   padding: 7px 0;
   text-align: center;
   color: #555555;
 }
-.gnb_depth2 a:hover {
+.gnb .gnb_depth2 a:hover {
   font-weight: 700;
   color: #1d1d1d;
 }
@@ -3722,6 +3732,15 @@ input[type=checkbox] {
   background-size: contain;
 }
 
+.language {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .language {
+    display: block;
+  }
+}
 .language .language_button {
   display: flex;
   align-items: center;
@@ -3729,9 +3748,9 @@ input[type=checkbox] {
 .language .language_button::after {
   display: block;
   width: 25px;
-  height: 12px;
+  height: 25px;
   content: "";
-  background: url(../../../resources/images/component/common/ico_downarrow.png) no-repeat;
+  background: url(../../../resources/images/component/common/ico_arr_down.svg) no-repeat;
   background-size: contain;
 }
 .language .language_list {
