@@ -29,11 +29,66 @@
     </div>
     <div id="wrap">
       <header id="header">
-        <h1>
-          <a href="#">logo</a>
-        </h1>
-        <nav>nav</nav>
-        <div class="util">util</div>
+        <div class="inner">
+          <h1 class="logo">
+            <a href="#">
+              <span>우리자산운용</span>
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_depth1">
+              <li>
+                <a href="#"><span>MENU1</span></a>
+                <ul class="gnb_depth2">
+                  <li><a href="#">MENU1</a></li>
+                  <li><a href="#">MENU2</a></li>
+                  <li><a href="#">MENU3</a></li>
+                  <li><a href="#">MENU4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>MENU2</span></a>
+                <ul class="gnb_depth2">
+                  <li><a href="#">MENU1</a></li>
+                  <li><a href="#">MENU2</a></li>
+                  <li><a href="#">MENU3</a></li>
+                  <li><a href="#">MENU4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>MENU3</span></a>
+                <ul class="gnb_depth2">
+                  <li><a href="#">MENU1</a></li>
+                  <li><a href="#">MENU2</a></li>
+                  <li><a href="#">MENU3</a></li>
+                  <li><a href="#">MENU4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>MENU4</span></a>
+                <ul class="gnb_depth2">
+                  <li><a href="#">MENU1</a></li>
+                  <li><a href="#">MENU2</a></li>
+                  <li><a href="#">MENU3</a></li>
+                  <li><a href="#">MENU4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="util">
+            <div class="language">
+              <button class="language_button">kor</button>
+              <ul class="language_list">
+                <li>kor</li>
+                <li>eng</li>
+              </ul>
+            </div>
+            <button class="search">
+              <span class="blind">검색</span>
+            </button>
+            <div class="sitemap"></div>
+          </div>
+        </div>
       </header>
       <div class="slide">
         <!-- Slider main container -->
@@ -61,11 +116,25 @@
             <div class="swiper-slide">
               <a href="#">
                 <img src="https://i.ytimg.com/vi/RRQLQm0AXdU/maxresdefault.jpg" alt="hera" />
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">슬라이드 제목</strong>
+                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                  </div>
+                </div>
               </a>
             </div>
             <div class="swiper-slide">
               <a href="#">
                 <img src="https://i.ytimg.com/vi/MZdGr8RPcT0/maxresdefault.jpg" alt="hera" />
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">슬라이드 제목</strong>
+                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
@@ -141,7 +210,7 @@
           </div>
         </section>
 
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <!-- news section-->
         <section class="sec-g sec-news bg-gray">
           <div class="inner">
             <h2 class="sec-g__tit">섹션 타이틀</h2>
@@ -150,7 +219,7 @@
           </div>
         </section>
 
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <!-- news section -->
         <section class="sec-g sec-news">
           <div class="inner">
             <h2 class="sec-g__tit">섹션 타이틀</h2>
@@ -159,7 +228,7 @@
           </div>
         </section>
 
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+        <!-- news section -->
         <section class="sec-g sec-news bg-gray">
           <div class="inner">
             <h2 class="sec-g__tit">섹션 타이틀</h2>
@@ -201,7 +270,7 @@
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-studio .swiper-pagination",
           clickable: true,
         },
         breakpoints: {

@@ -14,6 +14,38 @@
     padding: 0 $p-tablet;
   }
 }
+#skip-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  text-align: center;
+  background-color: var(--#{$prefix}gray-90);
+  a {
+    &:not(:focus) {
+      @include sr-only;
+    }
+    &:focus {
+      @include flex-layout($ai: center, $jc: center);
+      @include focus($color: $white, $alpha: 0.9);
+      font-size: 1.5rem;
+      color: $white; //var(--#{$prefix}white)를 이걸로 대체
+      width: 100%;
+      height: 3.2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  &.type1 {
+    background-color: var(--#{$prefix}white);
+    a {
+      &:focus {
+        color: var(--#{$prefix}gray-90);
+      }
+    }
+  }
+}
 
 // section layout
 .sec-g {
@@ -28,8 +60,11 @@
     gap: 10px;
     position: absolute;
     top: 17px;
-    right: 30px;
+    right: $p-mobile;
     font-size: 2rem;
+    @include mobileMore {
+      right: $p-tablet;
+    }
     &::after {
       content: "\f061";
       font-family: "Line Awesome Free";
@@ -41,6 +76,94 @@
       height: 40px;
       background: $gray-20;
       border-radius: 50%;
+    }
+  }
+}
+//header
+#header {
+  position: relative;
+  z-index: 1000;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $gray-30;
+    height: 198px;
+    top: 102px;
+    left: 0;
+    right: 0;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+  }
+  .logo {
+    a {
+      display: block;
+      width: 306px;
+      height: 54px;
+      background: url(../../../resources/images/pattern/common/head_logo.png) no-repeat 0 0;
+    }
+    span {
+      @include sr-only;
+    }
+  }
+}
+
+.gnb {
+  position: relative;
+  &_depth1 {
+    display: flex;
+    > li {
+      &:hover {
+        > a > span::after {
+          width: 100%;
+        }
+      }
+      position: relative;
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 102px;
+        padding: 0 50px;
+        font-size: 2rem;
+        font-weight: bold;
+        background: aquamarine;
+        > span {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: rebeccapurple;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  &_depth2 {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background-color: $gray-30;
+    // display: none;
+    //나는 라인 안그릴거야
+    a {
+      display: block;
+      padding: 7px 0;
+      text-align: center;
+      color: $gray-70;
     }
   }
 }
