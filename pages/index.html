@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KRDS themplate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../js/pattern/ui-pattern_script.js"></script>
+    <script defer src="../js/pattern/ui--swiper_script.js"></script>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="페이지 제목" />
     <meta property="og:description" content="페이지 설명" />
@@ -86,9 +89,54 @@
             <button class="search">
               <span class="blind">검색</span>
             </button>
-            <div class="sitemap"></div>
+            <button class="sitemap">
+              <span class="blind">전체메뉴</span>
+            </button>
           </div>
         </div>
+        <nav id="nav_all">
+          <ul class="gnb_depth1">
+            <li>
+              <a href="#"> <span>MENU1</span></a>
+              <ul class="gnb_depth2">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>MENU2</span></a>
+              <ul class="gnb_depth2">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>MENU3</span></a>
+              <ul class="gnb_depth2">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>MENU4</span></a>
+              <ul class="gnb_depth2">
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="close">
+            <span class="blind">전체메뉴 닫기</span>
+          </button>
+        </nav>
       </header>
       <div class="slide">
         <!-- Slider main container -->
@@ -239,51 +287,5 @@
       </main>
       <footer id="footer">footer</footer>
     </div>
-
-    <script>
-      var swiper = new Swiper(".slide-intro", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        // autoplay: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        // breakpoints: {
-        //   640: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20,
-        //   },
-        //   768: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 40,
-        //   },
-        //   1024: {
-        //     slidesPerView: 5,
-        //     spaceBetween: 50,
-        //   },
-        // },
-      });
-
-      var swiper = new Swiper(".slide-studio", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: {
-          el: ".swiper-studio .swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          600: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      });
-    </script>
   </body>
 </html>
