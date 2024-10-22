@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KRDS themplate</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script defer src="../js/pattern/ui-pattern_script.js"></script>
-    <script defer src="../js/pattern/ui--swiper_script.js"></script>
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="페이지 제목" />
     <meta property="og:description" content="페이지 설명" />
@@ -23,7 +21,11 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="stylesheet" href="../resources/css/styles.css" />
     <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../js/pattern/ui-pattern_script.js"></script>
+    <script defer src="../js/pattern/ui--swiper_script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../js/pattern/include.js"></script>
   </head>
   <body>
     <div id="skip-nav">
@@ -285,8 +287,10 @@
           </div>
         </section>
       </main>
-      <div w3-include-html="./"></div>
-      <footer id="footer">footer</footer>
-    </div>
+      <footer id="footer" w3-include-html="./layout/footer.html">
+      </footer>
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>
